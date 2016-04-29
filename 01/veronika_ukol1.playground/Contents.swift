@@ -58,7 +58,7 @@ public class CarCollection {
     func showOff(cars : [Car]) -> [Car] {
         for car in cars {
             if car.carType == .buggati {
-            print ("To vejráš jaký mám fáro co?!")
+            print ("To vejráš jaký mám fáro co?!", car.carType, car.carType, car.vinNumber, car.gasConsuption)
             }
             else {
                 print (car.carType, car.vinNumber, car.hasConditioning, car.gasConsuption )
