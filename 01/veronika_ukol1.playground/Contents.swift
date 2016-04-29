@@ -12,7 +12,7 @@ enum Cars {
 public class Car {
     var carType: Cars
     var gasConsuption: Float
-    var vinNumber: String
+    let vinNumber: String
     var hasConditioning: Bool
     var engineOn: Bool = false
     
@@ -68,7 +68,7 @@ public class CarCollection {
         }
     }
     
-    func addCarsInGarage(car: Car) -> [Car] {
+    func addCars(car: Car) -> [Car] {
         carsInGarage.append(car)
         return carsInGarage
         
@@ -81,7 +81,7 @@ var Twingo = Car(carType: .buggati, vinNumber: "DADYDADYDA", gasConsuption: 30, 
 
 
 var chooseCar = CarCollection()
-chooseCar.addCarsInGarage(AstonMartin)
+chooseCar.addCars(AstonMartin)
 
 
 
