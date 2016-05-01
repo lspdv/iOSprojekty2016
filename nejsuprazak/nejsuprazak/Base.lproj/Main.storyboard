@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nejsuprazak" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ČUDLÍČEK ŽEJO!" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSh-ux-a0D">
+                                <rect key="frame" x="128" y="64" width="344" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGW-uA-0AJ">
+                                <rect key="frame" x="217" y="144" width="166" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="ČUDLÍČEK ŽEJO!"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2u2-sP-eJ8">
+                                <rect key="frame" x="189" y="286" width="222" height="29"/>
+                                <color key="backgroundColor" red="0.83021106020942415" green="0.51993249559683297" blue="0.28238646506917858" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Vokurka"/>
+                                    <segment title="Bábovka"/>
+                                    <segment title="Šulínek"/>
+                                </segments>
+                                <connections>
+                                    <action selector="drakovoCudlik:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Zv-AD-HDO"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33774245689655175" green="0.73821839080459761" blue="0.7217313218390804" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QSh-ux-a0D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-209" id="2GP-w8-QJY"/>
+                            <constraint firstItem="2u2-sP-eJ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mo3-AH-LNo"/>
+                            <constraint firstItem="2u2-sP-eJ8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YEf-hh-CqA"/>
+                            <constraint firstItem="HGW-uA-0AJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-141" id="i4M-zt-f2J"/>
+                            <constraint firstItem="HGW-uA-0AJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wSL-qa-0yW"/>
+                            <constraint firstItem="QSh-ux-a0D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wjE-hr-IZv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cudlicek" destination="QSh-ux-a0D" id="oFh-aD-TfA"/>
+                        <outlet property="drakovoCudlik" destination="2u2-sP-eJ8" id="IBg-Ng-9nC"/>
+                        <outlet property="spravnejcudlicek" destination="HGW-uA-0AJ" id="ReK-k7-QT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="349"/>
+        </scene>
+    </scenes>
+</document>
